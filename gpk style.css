@@ -546,6 +546,8 @@ input {
     .header--burger--button {
         display: block;
         cursor: pointer;
+        position: relative;
+        z-index: 10;
     }
 
     .menu {
@@ -690,4 +692,5 @@ input {
     .footer--top:hover {
         box-shadow: 0 0 10px 1px #0000008e inset;
     }
+
 }
