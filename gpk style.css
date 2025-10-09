@@ -216,7 +216,7 @@ input {
     position: absolute;
     top: -100px;
     left: -100px;
-    transition: 400ms ease;
+    transition: 800ms ease-out;
 }
 
 .content-first__column-second--database {
@@ -224,7 +224,7 @@ input {
     position: absolute;
     bottom: -50px;
     left: -150px;
-    transition: 700ms ease;
+    transition: 800ms ease-out;
 }
 
 .content-first__column-second--laptop {
@@ -232,7 +232,7 @@ input {
     position: absolute;
     bottom: 10px;
     left: 150px;
-    transition: 350ms ease;
+    transition: 500ms ease-out;
 }
 
 .content-first__column-second--pc {
@@ -240,7 +240,7 @@ input {
     position: absolute;
     top: 20px;
     left: -80px;
-    transition: 200ms ease;
+    transition: 270ms ease-out;
 }
 
 .content-second {
@@ -818,5 +818,6 @@ input {
         box-shadow: 0 0 10px 1px #0000008e inset;
     }
 }
+
 
 
