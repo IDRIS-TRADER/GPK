@@ -679,6 +679,7 @@ input {
 @media (hover: hover) {
     .menu:hover {
         transform: scale(1.1);
+        text-shadow: 5px 5px 10px  #0000008e;
     }
 
     .header__columns__second--button:hover {
@@ -694,3 +695,4 @@ input {
     }
 
 }
+
