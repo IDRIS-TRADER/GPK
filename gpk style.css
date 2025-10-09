@@ -151,7 +151,7 @@ input {
 
 .header__columns__second__language--boll {
     position: absolute;
-    left: 0; 
+    left: 0;
     width: 46px;
     height: 46px;
     background-color: var(--color-blue);
@@ -174,6 +174,9 @@ input {
 
 .content-first {
     margin-top: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .content-first--text-first {
@@ -200,6 +203,44 @@ input {
     font-size: 24px;
     font-weight: 600;
     color: var(--color-white);
+}
+
+.content-first__column-second {
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+
+.content-first__column-second--book {
+    width: 100px;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    transition: 400ms ease;
+}
+
+.content-first__column-second--database {
+    width: 120px;
+    position: absolute;
+    bottom: -50px;
+    left: -150px;
+    transition: 700ms ease;
+}
+
+.content-first__column-second--laptop {
+    width: 150px;
+    position: absolute;
+    bottom: 10px;
+    left: 150px;
+    transition: 350ms ease;
+}
+
+.content-first__column-second--pc {
+    width: 250px;
+    position: absolute;
+    top: 20px;
+    left: -80px;
+    transition: 200ms ease;
 }
 
 .content-second {
@@ -424,6 +465,10 @@ input {
     margin-top: 5px;
 }
 
+.red {
+    opacity: 0;
+}
+
 
 
 /* Медиа-запросы */
@@ -515,16 +560,62 @@ input {
     .footer--text {
         font-size: 12px;
     }
+
+    .content-first__column-second--book {
+        width: 80px;
+        position: absolute;
+        top: -50px;
+        left: -80px;
+    }
+
+    .content-first__column-second--database {
+        width: 100px;
+        position: absolute;
+        bottom: 20px;
+        left: -80px;
+    }
+
+    .content-first__column-second--laptop {
+        width: 130px;
+        position: absolute;
+        bottom: 40px;
+        left: 200px;
+    }
+
+    .content-first__column-second--pc {
+        width: 230px;
+        position: absolute;
+        top: 0px;
+        left: 10px;
+    }
 }
 
 @media(max-width: 1000px) {
     .content-first {
         text-align: center;
+        display: grid;
+        justify-content: center;
+    }
+
+    .content-first__column-first {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .content-first__column-second {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        left: 50px;
     }
 
     .content-first--text-first {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .content-second {
+        margin-top: 50px;
     }
 
     .content-second--zogolovok::after {
@@ -613,6 +704,39 @@ input {
         font-size: 17px;
     }
 
+     .content-first__column-second {
+        margin-top: 150px;
+        left: 0;
+    }
+
+    .content-first__column-second--book {
+        width: 70px;
+        position: absolute;
+        top: -50px;
+        left: 50px;
+    }
+
+    .content-first__column-second--database {
+        width: 90px;
+        position: absolute;
+        bottom: 20px;
+        left: 50px;
+    }
+
+    .content-first__column-second--laptop {
+        width: 120px;
+        position: absolute;
+        bottom: 40px;
+        left: 200px;
+    }
+
+    .content-first__column-second--pc {
+        width: 200px;
+        position: absolute;
+        top: 0px;
+        left: 50px;
+    }
+
     .content-second {
         margin-top: 150px;
         padding: 30px;
@@ -679,7 +803,7 @@ input {
 @media (hover: hover) {
     .menu:hover {
         transform: scale(1.1);
-        text-shadow: 5px 5px 10px  #0000008e;
+        text-shadow: 5px 5px 10px #0000008e;
     }
 
     .header__columns__second--button:hover {
@@ -693,6 +817,6 @@ input {
     .footer--top:hover {
         box-shadow: 0 0 10px 1px #0000008e inset;
     }
-
 }
+
 
